@@ -8,3 +8,4 @@ npx create-next-app@latest create_test
 cd create_test
 npm run dev
 
+

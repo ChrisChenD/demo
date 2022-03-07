@@ -13,6 +13,8 @@ git config --global --unset credential.helper
 
 git config credential.helper store
 
+git config --global user.email 'ChrisChen2050@outlook.com'
+git config --global user.name 'Asdfrew!23'
 
 ChrisChen2050@outlook.com
 Asdfrew!23
@@ -30,15 +32,18 @@ git config credential.helper store
 
 
 # 把目录上传到 git
-export git_user=
-export git_pwd=
+
+# 先设置代理
+export url='github.com/ChrisChenD/module_creator'
 rm .git -rf
 git init
-git remote add origin https://$git_user:$git_pwd@github.com/ChrisChenD/demo.git
+git remote add origin https://$url
+git checkout -b main
 git add .;git commit -m '.';git push
-git push --set-upstream origin master
+git push -f --set-upstream origin main
 
-git remote add origin https://github.com/ChrisChenD/demo.git
+
+
 
 
 # 安装 git 客户端
@@ -56,3 +61,6 @@ gh auth login
 git config --global https.proxy http://127.0.0.1:8989 # 无效
 export https_proxy=127.0.0.1:8989 # 有效
 
+
+
+Chris@out.Chen2050.look.Asd.com.frew!23
